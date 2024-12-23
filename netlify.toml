@@ -1,5 +1,12 @@
 [build]
+base = "CALC-WEBD"
 publish = "."
-command = "dotnet build"
+command = "dotnet build CALC-WEBD.csproj"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
 
 
