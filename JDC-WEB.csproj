@@ -1,0 +1,10 @@
+[build]
+publish = "."
+command = "dotnet build JDC-WEB.csproj"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+
