@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CALC-WEBD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59d5c6f18ac7f4134fa056a0c41840944d2a66b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e469d0441aef1c9869f675f5ada8e9500cad7afd")]
 [assembly: System.Reflection.AssemblyProductAttribute("CALC-WEBD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CALC-WEBD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
