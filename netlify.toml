@@ -2,4 +2,9 @@
 publish = "."
 command = "dotnet build"
 
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
 
