@@ -1,10 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+[build]
+publish = "."
+command = "dotnet build CALC-WEBD.csproj"
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>CALC_WEBD</RootNamespace>
-  </PropertyGroup>
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
 
-</Project>
