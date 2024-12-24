@@ -32,3 +32,9 @@ C:\myapp\CALC-WEBD\obj\Release\net6.0\refint\CALC-WEBD.dll
 C:\myapp\CALC-WEBD\obj\Release\net6.0\CALC-WEBD.pdb
 C:\myapp\CALC-WEBD\obj\Release\net6.0\CALC-WEBD.genruntimeconfig.cache
 C:\myapp\CALC-WEBD\obj\Release\net6.0\ref\CALC-WEBD.dll
+C:\myapp\CALC-WEBD\bin\Release\net6.0\publish-directory\web.config
+C:\myapp\CALC-WEBD\bin\Release\net6.0\publish-directory\appsettings.Development.json
+C:\myapp\CALC-WEBD\bin\Release\net6.0\publish-directory\appsettings.json
+C:\myapp\CALC-WEBD\bin\Release\net6.0\publish-directory\CALC-WEBD.deps.json
+C:\myapp\CALC-WEBD\bin\Release\net6.0\publish-directory\CALC-WEBD.runtimeconfig.json
+C:\myapp\CALC-WEBD\bin\Release\net6.0\publish-directory\CALC-WEBD.staticwebassets.endpoints.json

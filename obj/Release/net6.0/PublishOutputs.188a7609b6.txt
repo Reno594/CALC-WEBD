@@ -1,6 +1,12 @@
 C:\myapp\CALC-WEBD\publish-directory\CALC-WEBD.exe
+C:\myapp\CALC-WEBD\publish-directory\publish-directory\web.config
 C:\myapp\CALC-WEBD\publish-directory\appsettings.Development.json
 C:\myapp\CALC-WEBD\publish-directory\appsettings.json
+C:\myapp\CALC-WEBD\publish-directory\publish-directory\appsettings.Development.json
+C:\myapp\CALC-WEBD\publish-directory\publish-directory\appsettings.json
+C:\myapp\CALC-WEBD\publish-directory\publish-directory\CALC-WEBD.deps.json
+C:\myapp\CALC-WEBD\publish-directory\publish-directory\CALC-WEBD.runtimeconfig.json
+C:\myapp\CALC-WEBD\publish-directory\publish-directory\CALC-WEBD.staticwebassets.endpoints.json
 C:\myapp\CALC-WEBD\publish-directory\CALC-WEBD.dll
 C:\myapp\CALC-WEBD\publish-directory\CALC-WEBD.deps.json
 C:\myapp\CALC-WEBD\publish-directory\CALC-WEBD.runtimeconfig.json

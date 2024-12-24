@@ -32,7 +32,10 @@ public class Startup
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapRazorPages();
+            endpoints.MapFallbackToFile("index.html"); // Esto asegura que todas las rutas se redirijan a index.html
         });
     }
 }
+
+
 
