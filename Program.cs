@@ -22,13 +22,14 @@ app.UseAuthorization();
 
 // Comentamos las líneas problemáticas
 // app.MapStaticAssets();
+// .WithStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-// .WithStaticAssets();
 
 app.Run();
+
 
 
 
