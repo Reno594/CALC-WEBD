@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
 </head>
 <body>
-    <h1>Formulario de Contacto</h1>
-    <form name="contact" method="POST" data-netlify="true">
-        <p>
-            <label>Nombre <input type="text" name="name" /></label>
-        </p>
-        <p>
-            <label>Email <input type="email" name="email" /></label>
-        </p>
-        <p>
-            <button type="submit">Enviar</button>
-        </p>
-    </form>
+  <form id="contactForm">
+    <label for="name">Nombre</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="successMessage" style="display:none;color:green;">Formulario enviado con éxito!</div>
+  <div id="errorMessage" style="display:none;color:red;">Ha ocurrido un error. Por favor, intente nuevamente.</div>
+
+  <script src="wwwroot/js/scripts.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
 </body>
 </html>
+
+
+
 
 
 

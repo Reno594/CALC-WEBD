@@ -1,1 +1,3 @@
 .vs/ bin/ obj/
+# Local Netlify folder
+.netlify
