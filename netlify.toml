@@ -1,9 +1,10 @@
 [build]
-  command = "dotnet publish -c Release -o publish-directory"
+  command = "dotnet publish CALC-WEBD.csproj -c Release -o publish-directory"
   publish = "publish-directory"
 
 [functions]
   directory = "netlify/functions"
+
 
 
 
