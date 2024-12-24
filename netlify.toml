@@ -1,6 +1,7 @@
 [build]
   command = "dotnet publish CALC-WEBD.csproj -c Release -o publish-directory"
   publish = "publish-directory"
+  base = "."
 
 [[redirects]]
   from = "/*"
