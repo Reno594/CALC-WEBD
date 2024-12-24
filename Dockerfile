@@ -1,30 +1,19 @@
-# Consulte https://aka.ms/customizecontainer para aprender a personalizar su contenedor de depuración y cómo Visual Studio usa este Dockerfile para compilar sus imágenes para una depuración más rápida.
-
-# Esta fase se usa cuando se ejecuta desde VS en modo rápido (valor predeterminado para la configuración de depuración)
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER app
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 80
 
-
-# Esta fase se usa para compilar el proyecto de servicio
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["JDC-WEB.csproj", "."]
-RUN dotnet restore "./JDC-WEB.csproj"
+COPY ["CALC-WEBD/CALC-WEBD.csproj", "CALC-WEBD/"]
+RUN dotnet restore "CALC-WEBD/CALC-WEBD.csproj"
 COPY . .
-WORKDIR "/src/."
-RUN dotnet build "./JDC-WEB.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/CALC-WEBD"
+RUN dotnet build "CALC-WEBD.csproj" -c Release -o /app/build
 
-# Esta fase se usa para publicar el proyecto de servicio que se copiará en la fase final.
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./JDC-WEB.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "CALC-WEBD.csproj" -c Release -o /app/publish
 
-# Esta fase se usa en producción o cuando se ejecuta desde VS en modo normal (valor predeterminado cuando no se usa la configuración de depuración)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "JDC-WEB.dll"]
+ENTRYPOINT ["dotnet", "CALC-WEBD.dll"]
