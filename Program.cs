@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
+var builder = WebApplication.CreateBuilder(args);
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -16,12 +18,13 @@ app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
 
-// Comentar las líneas problemáticas temporalmente
+// Comentar temporalmente las líneas problemáticas
 // app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-    // .WithStaticAssets();
+// .WithStaticAssets();
 
 app.Run();
+
