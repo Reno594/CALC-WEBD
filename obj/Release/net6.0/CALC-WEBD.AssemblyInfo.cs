@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CALC-WEBD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9eb7c0f35456a1a413ed936ebecbc3bedcd2719d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a299524e06149689bf61a435cb58b1ab4f14ccd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("CALC-WEBD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CALC-WEBD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
