@@ -2,8 +2,11 @@
   command = "dotnet publish CALC-WEBD.csproj -c Release -o publish-directory"
   publish = "publish-directory"
 
-[functions]
-  directory = "netlify/functions"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
 
 
 
